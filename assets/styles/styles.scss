@@ -277,3 +277,59 @@ img{
 .about__text{
     font-weight: $fontLight;
 }
+
+//Skills
+.skills__container{
+    row-gap: 2rem;
+    text-align: center;
+}
+.skills__subtitle{
+    margin-bottom: $mb2;
+}
+.skills__text{
+    margin-bottom: $mb4;
+}
+.skills__data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: $fontSemi;
+    padding: .5rem 1rem;
+    margin-bottom: $mb4;
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+}
+.skills__icon{
+    font-size: 2rem;
+    margin-right: $mb2;
+    color: $firstColor;
+}
+.skills__names{
+    display: flex;
+    align-items: center;
+}
+.skills__bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: $firstColor;
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: $zBack;
+}
+.skills__java{
+    width: 90%;
+}
+.skills__javascript{
+    width: 85%;
+}
+.skills__sass{
+    width: 80%;
+}
+.skills__css{
+    width: 80%;
+}
+.skills__img{
+    border-radius: .5rem;
+}
