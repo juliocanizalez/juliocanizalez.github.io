@@ -232,4 +232,27 @@ img {
   -webkit-box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
           box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
+
+.about__container {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.about__subtitle {
+  margin-bottom: 1rem;
+}
+
+.about__img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.about__img img {
+  width: 200px;
+  border-radius: .5rem;
+}
+
+.about__text {
+  font-weight: 300;
+}
 /*# sourceMappingURL=styles.css.map */
