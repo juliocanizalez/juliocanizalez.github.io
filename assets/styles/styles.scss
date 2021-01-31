@@ -3,3 +3,199 @@
     font-family: 'Raleway', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
 }
+
+//variables
+$headerHeight: 3rem;
+//font weights
+$fontLight: 300;
+$fontRegular: 400;
+$fontSemi:500;
+//font colors
+$white: #fff;
+$background: #F2F2F2;
+$secondColor: #262626;
+$firstColor: #f25c05;
+$fontColor: #404040;
+//font family and sizes
+$bodyFont: 'Raleway', sans-serif;
+$bigFontSize: 2rem;
+$h2FontSize: 1.25rem;
+$normalFontSize: 0.938rem;
+
+@media screen and (min-width: 768px){
+    $bigFontSize: 3.5rem;
+    $h2FontSize: 2rem;
+    $normalFontSize: 1rem;
+}
+
+//margins
+$mb1: 0.5rem;
+$mb2: 1rem;
+$mb3: 1.5rem;
+$mb4: 2rem;
+$mb5: 2.5rem;
+$mb6: 3rem;
+
+//z index
+
+$zBack: -10;
+$zNormal: 1;
+$zTooltip: 10;
+$zFixed: 100;
+
+//Base
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: $background;
+}
+
+body{
+    margin: $headerHeight 0 0 0;
+    font-family: $bodyFont;
+    font-size: $normalFontSize;
+    color: $secondColor;
+}
+
+h1,h2,p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+//classes
+.section-title{
+    position: relative;
+    font-size: $h2FontSize;
+    color: $firstColor;
+    margin-top: $mb2;
+    margin-bottom: $mb4;
+    text-align: center;
+}
+
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: $firstColor;
+}
+
+.section{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+// layout
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: $mb2;
+    margin-right: $mb2;
+}
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $zFixed;
+    background-color: $background;
+}
+.shadow{
+    box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
+}
+
+//Nav
+.nav{
+    height: $headerHeight;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: $fontSemi;
+}
+
+@media screen and (max-width: 768px){
+    .nav__menu{
+        position: fixed;
+        top: $headerHeight;
+        right: -100%;
+        width: 75%;
+        height: 100%;
+        padding: 2rem;
+        background-color: $secondColor;
+        transition: .5s;
+    }
+}
+
+.nav__item{
+    margin-bottom: $mb4;
+}
+
+.nav__link{
+    position: relative;
+    color: $white;
+}
+
+.nav__link:hover{
+    position: relative;
+}
+
+.nav__link:hover::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: $firstColor;
+}
+
+.nav__logo{
+    color: $secondColor;
+    font-size: 1.6rem;
+}
+
+.nav__toggle{
+    color: $secondColor;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.active::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: $firstColor;
+}
+
+.show{
+    right: 0;
+}
