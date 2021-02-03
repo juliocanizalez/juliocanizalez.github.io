@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Raleway', sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap");
+  font-family: 'Nunito', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600&display=swap");
 }
 
 *, ::before, ::after {
@@ -10,12 +10,11 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #F2F2F2;
 }
 
 body {
   margin: 3rem 0 0 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 0.938rem;
   color: #262626;
 }
@@ -85,7 +84,7 @@ img {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #F2F2F2;
+  background-color: #fff;
 }
 
 .shadow {
@@ -104,7 +103,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
@@ -215,8 +214,14 @@ img {
 .home__img {
   position: absolute;
   right: 2%;
-  bottom: 7%;
+  bottom: 2%;
   width: 295px;
+}
+
+@media screen and (min-height: 800px) {
+  .home__img {
+    bottom: 6%;
+  }
 }
 
 .button {
@@ -224,7 +229,7 @@ img {
   background-color: #f25c05;
   color: #fff;
   padding: 0.75rem 2.5rem;
-  font-weight: 400;
+  font-weight: 300;
   border-radius: 0.5rem;
 }
 
@@ -253,7 +258,7 @@ img {
 }
 
 .about__text {
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .skills__container {
@@ -280,7 +285,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  font-weight: 500;
+  font-weight: 600;
   padding: .5rem 1rem;
   margin-bottom: 2rem;
   border-radius: .5rem;
@@ -353,5 +358,109 @@ img {
 .work__img img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.form__input {
+  position: relative;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.form__input input {
+  width: 100%;
+  height: 100%;
+  padding: 35px 0 7px 0;
+  border: none;
+  outline: none;
+  font-size: 0.938rem;
+}
+
+.form__input label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem;
+  pointer-events: none;
+  border-bottom: 1px solid #BFBFBF;
+}
+
+.form__input label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid #f25c05;
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+  -webkit-transition: -webkit-transform 0.1s ease;
+  transition: -webkit-transform 0.1s ease;
+  transition: transform 0.1s ease;
+  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+}
+
+.form__input input:focus + .form__label .content__label,
+.form__input input:valid + .form__label .content__label {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 1.1rem;
+  color: #f25c05;
+}
+
+.form__input textarea {
+  width: 100%;
+  height: 100%;
+  padding: 35px 0 7px 0;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.form__input textarea:focus + .form__label .content__label-textarea,
+.form__input textarea:valid + .form__label .content__label-textarea {
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+  font-size: 1.1rem;
+  color: #f25c05;
+}
+
+.form__input input:focus + .form__label::after,
+.form__input input:valid + .form__label::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.form__input textarea:focus + .form__label::after,
+.form__input textarea:valid + .form__label::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.content__label {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.content__label-textarea {
+  position: absolute;
+  bottom: 70px;
+  left: 0px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.contact__button {
+  display: block;
+  border: none;
+  outline: none;
+  font-size: 0.938rem;
+  cursor: pointer;
+  margin-left: auto;
 }
 /*# sourceMappingURL=styles.css.map */

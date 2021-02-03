@@ -1,31 +1,33 @@
 // imports
 @font-face {
-    font-family: 'Raleway', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+    font-family: 'Nunito', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600&display=swap');
 }
 
 //variables
 $headerHeight: 3rem;
 //font weights
-$fontLight: 300;
-$fontRegular: 400;
-$fontSemi:500;
+$fontLight: 200;
+$fontRegular: 300;
+$fontSemi:600;
 //font colors
 $white: #fff;
-$background: #F2F2F2;
+$border: #BFBFBF;
 $secondColor: #262626;
 $firstColor: #f25c05;
 $fontColor: #404040;
 //font family and sizes
-$bodyFont: 'Raleway', sans-serif;
+$bodyFont: 'Nunito', sans-serif;
 $bigFontSize: 2rem;
 $h2FontSize: 1.25rem;
 $normalFontSize: 0.938rem;
+$middleFontSize:1.1rem;
 
 @media screen and (min-width: 768px){
     $bigFontSize: 3.5rem;
     $h2FontSize: 2rem;
     $normalFontSize: 1rem;
+    $middleFontSize:1.3rem;
 }
 
 //margins
@@ -50,7 +52,6 @@ $zFixed: 100;
 
 html{
     scroll-behavior: smooth;
-    background-color: $background;
 }
 
 body{
@@ -124,7 +125,7 @@ img{
     top: 0;
     left: 0;
     z-index: $zFixed;
-    background-color: $background;
+    background-color: $white;
 }
 .shadow{
     box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
@@ -238,10 +239,15 @@ img{
 .home__img{
     position: absolute;
     right: 2%;
-    bottom: 7%;
+    bottom: 2%;
     width: 295px;
 }
 
+@media screen and (min-height: 800px){
+    .home__img{
+        bottom: 6%;
+    }
+}
 //buttons
 .button{
     display: inline-block;
@@ -349,4 +355,98 @@ img{
 }
 .work__img img:hover{
     transform: scale(1.1);
+}
+
+//contact
+.form__input{
+    position: relative;
+    margin-bottom: $mb3;
+    overflow: hidden;
+
+    input{
+        width: 100%;
+        height: 100%;
+        padding: 35px 0 7px 0;
+        border: none;
+        outline: none;
+        font-size: $normalFontSize;
+    }
+
+    label{
+        position: absolute;
+        bottom: 0px;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        padding: 0.8rem;
+        pointer-events: none;
+        border-bottom: 1px solid $border;
+    }
+
+    label::after{
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        height: 100%;
+        width: 100%;
+        border-bottom: 2px solid $firstColor;
+        transform: translateX(-110%);
+        transition: transform 0.1s ease;
+    }
+
+    input:focus + .form__label .content__label, 
+    input:valid + .form__label .content__label{
+        transform: translateY(-150%);
+        font-size: $middleFontSize;
+        color: $firstColor;
+    }
+
+    textarea{
+        width: 100%;
+        height: 100%;
+        padding: 35px 0 7px 0;
+        border: none;
+        resize: none;
+        outline: none;
+    }
+
+    textarea:focus + .form__label .content__label-textarea, 
+    textarea:valid + .form__label .content__label-textarea{
+        transform: translateY(-110%);
+        font-size: $middleFontSize;
+        color: $firstColor;
+    }
+
+    input:focus + .form__label::after, 
+    input:valid + .form__label::after{
+        transform: translateX(0%);
+    }
+
+    textarea:focus + .form__label::after,
+    textarea:valid + .form__label::after{
+        transform: translateX(0%);
+    }
+}
+
+.content__label{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.5s ease;
+}
+
+.content__label-textarea {
+    position: absolute;
+    bottom: 70px;
+    left: 0px;
+    transition: all 0.5s ease;
+}
+.contact__button{
+    display: block;
+    border: none;
+    outline: none;
+    font-size: $normalFontSize;
+    cursor: pointer;
+    margin-left: auto;
 }
