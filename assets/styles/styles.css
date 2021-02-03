@@ -42,7 +42,7 @@ img {
 .section-title {
   position: relative;
   font-size: 1.25rem;
-  color: #f25c05;
+  color: #dd2c00;
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -57,7 +57,7 @@ img {
   right: 0;
   margin: auto;
   top: 2rem;
-  background-color: #f25c05;
+  background-color: #dd2c00;
 }
 
 .section {
@@ -140,7 +140,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: #f25c05;
+  background-color: #dd2c00;
 }
 
 .nav__logo {
@@ -161,7 +161,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: #f25c05;
+  background-color: #dd2c00;
 }
 
 .show {
@@ -185,7 +185,7 @@ img {
 }
 
 .home__title-color {
-  color: #f25c05;
+  color: #dd2c00;
 }
 
 .home__social {
@@ -208,25 +208,25 @@ img {
 }
 
 .home__social-icon:hover {
-  color: #f25c05;
+  color: #dd2c00;
 }
 
 .home__img {
   position: absolute;
   right: 2%;
-  bottom: 2%;
-  width: 295px;
+  bottom: 0%;
+  width: 250px;
 }
 
 @media screen and (min-height: 800px) {
   .home__img {
-    bottom: 6%;
+    bottom: 2%;
   }
 }
 
 .button {
   display: inline-block;
-  background-color: #f25c05;
+  background-color: #dd2c00;
   color: #fff;
   padding: 0.75rem 2.5rem;
   font-weight: 300;
@@ -296,7 +296,7 @@ img {
 .skills__icon {
   font-size: 2rem;
   margin-right: 1rem;
-  color: #f25c05;
+  color: #dd2c00;
 }
 
 .skills__names {
@@ -312,7 +312,7 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: #f25c05;
+  background-color: #dd2c00;
   height: .25rem;
   border-radius: .5rem;
   z-index: -10;
@@ -393,7 +393,7 @@ img {
   bottom: 0px;
   height: 100%;
   width: 100%;
-  border-bottom: 2px solid #f25c05;
+  border-bottom: 2px solid #dd2c00;
   -webkit-transform: translateX(-110%);
           transform: translateX(-110%);
   -webkit-transition: -webkit-transform 0.1s ease;
@@ -407,7 +407,7 @@ img {
   -webkit-transform: translateY(-150%);
           transform: translateY(-150%);
   font-size: 1.1rem;
-  color: #f25c05;
+  color: #dd2c00;
 }
 
 .form__input textarea {
@@ -424,7 +424,7 @@ img {
   -webkit-transform: translateY(-110%);
           transform: translateY(-110%);
   font-size: 1.1rem;
-  color: #f25c05;
+  color: #dd2c00;
 }
 
 .form__input input:focus + .form__label::after,
@@ -462,6 +462,7 @@ img {
   font-size: 0.938rem;
   cursor: pointer;
   margin-left: auto;
+  text-align: center;
 }
 
 .footer {
@@ -485,5 +486,108 @@ img {
   font-size: 1.5rem;
   color: #fff;
   margin: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .section-title {
+    margin-bottom: 3rem;
+  }
+  .section-title::after {
+    width: 80px;
+    top: 3rem;
+  }
+  .nav {
+    height: calc($headerHeight + 1rem);
+  }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+  }
+  .nav__item {
+    margin-left: 3rem;
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .nav__link {
+    color: #262626;
+  }
+  .home {
+    height: 100vh;
+  }
+  .home__data {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .home__social {
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .home__social-icon {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+  .home__img {
+    width: 457px;
+    bottom: 15%;
+  }
+  .about__container, .skills__container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: initial;
+  }
+  .about__img img {
+    width: 300px;
+  }
+  .work__container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+  .contact__form {
+    width: 360px;
+  }
+  .contact__container {
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__img {
+    right: 10%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .home__img {
+    right: 21%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
