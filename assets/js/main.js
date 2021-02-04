@@ -15,10 +15,6 @@ showMenu('nav-toggle', 'nav-menu');
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction(){
-    //Active link
-    navLink.forEach(n => n.classList.remove('active'));
-    this.classList.add('active');
-
     //remove mobile menu
     const navMenu = document.getElementById('nav-menu');
     navMenu.classList.remove('show');
@@ -56,3 +52,31 @@ sr.reveal('.work__img',{interval: 200});
 
 //scroll contact
 sr.reveal('.form__input',{interval: 200}); 
+
+//control 'active' css class
+let sections = document.querySelectorAll('section');
+
+onscroll = () =>{
+    let scrollPosition = document.documentElement.scrollTop;
+
+    sections.forEach( section => {
+        if(scrollPosition >= section.offsetTop - section.offsetHeight * 0.4 && 
+            scrollPosition < section.offsetTop + section.offsetHeight - section.offsetHeight * 0.4){
+
+            let currentId = section.attributes.id.value;
+            cleanActive();
+            addActive(currentId);
+        }
+    });
+};
+
+let cleanActive = () => {
+    document.querySelectorAll("ul a").forEach( (el) => {
+        el.classList.remove("active");
+    });
+};
+
+let addActive = (id) => {
+    let selector = `ul a[href="#${id}"]`;
+    document.querySelector(selector).classList.add("active");
+}
