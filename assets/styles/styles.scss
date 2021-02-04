@@ -253,7 +253,7 @@ img{
     display: inline-block;
     background-color: $firstColor;
     color: $white;
-    padding: 0.75rem 2.5rem;
+    padding: 0.65rem 2.2rem;
     font-weight: $fontRegular;
     border-radius: 0.5rem;
 }
@@ -438,7 +438,7 @@ img{
 
 .content__label-textarea {
     position: absolute;
-    bottom: 70px;
+    bottom: 150px;
     left: 0px;
     transition: all 0.5s ease;
 }
@@ -448,9 +448,10 @@ img{
     outline: none;
     font-size: $normalFontSize;
     cursor: pointer;
+    margin-top: $mb4;
     margin-left: auto;
     text-align: center;
-    width: 40%;
+    width: 35%;
 }
 
 //Footer
@@ -465,6 +466,11 @@ img{
 .footer__title{
     font-size: 2rem;
     margin-bottom: $mb4;
+}
+
+.footer__subtitle{
+    font-weight: $fontLight;
+    margin-bottom: $mb3;
 }
 
 .footer__social{
@@ -573,4 +579,9 @@ img{
         right: 21%;
         bottom: 25%;
     }
+}
+
+#recaptcha > div {
+    margin: 0 auto;
+    margin-bottom: .5em;
 }
