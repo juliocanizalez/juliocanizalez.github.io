@@ -450,6 +450,7 @@ img{
     cursor: pointer;
     margin-left: auto;
     text-align: center;
+    width: 40%;
 }
 
 //Footer
@@ -527,7 +528,7 @@ img{
         margin-right: $mb4;
     }
     .home__img{
-        width: 457px;
+        width: 400px;
         bottom: 15%;
     }
     .about__container, .skills__container{
@@ -561,8 +562,15 @@ img{
     }
 }
 
+@media screen and (min-width: 1300px){
+    .home__title{
+        font-size: 3rem;
+    }
+}
+
 @media screen and (min-width: 1800px){
     .home__img{
         right: 21%;
+        bottom: 25%;
     }
 }
