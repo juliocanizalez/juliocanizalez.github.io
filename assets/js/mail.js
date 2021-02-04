@@ -1,4 +1,5 @@
 function sendMail(subject, message){
+    window.open(`mailto:juliocanizalez@outlook.com?subject=${subject}&body=${message}`, '_self');
     window.showSweetAlertRecaptcha = () => {
         Swal.fire({
             html: '<div id="recaptcha"></div>',
@@ -6,7 +7,7 @@ function sendMail(subject, message){
                 grecaptcha.ready(function() {
                     grecaptcha.execute('6LckUUkaAAAAAOgumMwy0tZmBOZband95RtLc0jK', {action: 'submit'})
                     .then(function (token){
-                        window.open(`mailto:juliocanizalez@outlook.com?subject=${subject}&body=${message}`, '_self');
+                        
                     });
                 });
             }
