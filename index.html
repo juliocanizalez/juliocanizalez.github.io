@@ -20,7 +20,7 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
@@ -168,28 +168,22 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <div class="form__input">
-                        <input type="text" name="name" class="contact__input" required>
-                        <label for="name" class="form__label">
-                            <span class="content__label">Name</span>
-                        </label>
-                    </div>
+                <form name="contactForm" action="" class="contact__form">
                     
                     <div class="form__input">
-                        <input type="mail" name="mail" class="contact__input" required>
-                        <label for="name" class="form__label">
-                            <span class="content__label">Email</span>
+                        <input type="text" name="subject" class="contact__input" required>
+                        <label for="Subject" class="form__label">
+                            <span class="content__label">Subject</span>
                         </label>
                     </div>
 
                     <div class="form__input">
-                        <textarea name="message" id="" cols="0" rows="5" class="contact__input" required></textarea>
+                        <textarea name="message" id="" cols="0" rows="10" class="contact__input" required></textarea>
                         <label for="name" class="form__label">
                             <span class="content__label-textarea">Message</span>
                         </label>
                     </div>
-                    <a href="#" class="contact__button button">Contact</a>
+                    <a href="javascript:validateForm();" class="contact__button button">Contact</a>
                 </form>
             </div>
         </section>
@@ -197,7 +191,7 @@
     <!--footer-->
     <footer class="footer">
         <p class="footer__title">Julio</p>
-
+        <p class="footer__subtitle">Find me on</p>
         <div class="footer__social">
             <a href="https://www.linkedin.com/in/juliocanizalez/" target="_blank" class="footer__icon"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/juliocanizalez" target="_blank" class="footer__icon"><i class="fab fa-github"></i></a>
@@ -206,11 +200,15 @@
         </div>
         <p>&#169; 2021 Copyright All Rights Reserved</p>
     </footer>
+    <!--reCaptcha-->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf27j0aAAAAAJEkVWB7h2mzn82S3sBJAz7LVQot"></script>
     <!--Sweet alert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <!--scroll reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--main javascript code-->
     <script src="assets/js/main.js"></script>
+    <!--mail-->
+    <script src="assets/js/mail.js"></script>
 </body>
 </html>

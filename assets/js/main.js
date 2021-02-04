@@ -56,7 +56,7 @@ sr.reveal('.form__input',{interval: 200});
 //control 'active' css class
 let sections = document.querySelectorAll('section');
 
-onscroll = () =>{
+function activeClassManagement(){
     let scrollPosition = document.documentElement.scrollTop;
 
     sections.forEach( section => {
@@ -68,7 +68,16 @@ onscroll = () =>{
             addActive(currentId);
         }
     });
+}
+
+onscroll = () =>{
+    activeClassManagement();
 };
+
+onload = () =>{
+    activeClassManagement();
+};
+
 
 let cleanActive = () => {
     document.querySelectorAll("ul a").forEach( (el) => {
