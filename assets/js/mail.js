@@ -4,7 +4,7 @@ function sendMail(subject, message){
             html: '<div id="recaptcha"></div>',
             onOpen: function () {
                 grecaptcha.ready(function() {
-                    grecaptcha.execute('6Lf27j0aAAAAAJEkVWB7h2mzn82S3sBJAz7LVQot', {action: 'submit'})
+                    grecaptcha.execute('6LckUUkaAAAAAOgumMwy0tZmBOZband95RtLc0jK', {action: 'submit'})
                     .then(function (token){
                         window.open(`mailto:juliocanizalez@outlook.com?subject=${subject}&body=${message}`, '_self');
                     });
