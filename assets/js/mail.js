@@ -1,26 +1,9 @@
-function sendMail(subject, message){
-    window.open(`mailto:juliocanizalez@outlook.com?subject=${subject}&body=${message}`, '_self');
-    window.showSweetAlertRecaptcha = () => {
-        Swal.fire({
-            html: '<div id="recaptcha"></div>',
-            onOpen: function () {
-                grecaptcha.ready(function() {
-                    grecaptcha.execute('6LckUUkaAAAAAOgumMwy0tZmBOZband95RtLc0jK', {action: 'submit'})
-                    .then(function (token){
-                        
-                    });
-                });
-            }
-        })
-    }
-}
-
 function validateForm(){
     let subject = document.forms["contactForm"]["subject"].value;
     let message = document.forms["contactForm"]["message"].value;
-
+    console.log(subject, message)
     if(subject != "" && message != ""){
-        sendMail(subject, message);
+        window.open(`mailto:juliocanizalez@outlook.com?subject=${subject}&body=${message}`, '_self');
     } else{
         Swal.fire({
             icon: 'error',
