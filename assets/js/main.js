@@ -72,6 +72,12 @@ function activeClassManagement(){
 
 onscroll = () =>{
     activeClassManagement();
+    const nav = document.querySelector('.l-header');
+    if(window.pageYOffset>0){
+        nav.classList.add("shadow");
+    }else{
+        nav.classList.remove("shadow");
+    }
 };
 
 onload = () =>{
