@@ -360,119 +360,13 @@ img {
           transform: scale(1.1);
 }
 
-.form__input {
-  position: relative;
-  margin-bottom: 1.5rem;
-  overflow: hidden;
-}
-
-.form__input input {
-  width: 100%;
-  height: 100%;
-  padding: 35px 0 7px 0;
-  border: none;
-  outline: none;
-  font-size: 0.938rem;
-}
-
-.form__input label {
-  position: absolute;
-  bottom: 0px;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  padding: 0.8rem;
-  pointer-events: none;
-  border-bottom: 1px solid #BFBFBF;
-}
-
-.form__input label::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  height: 100%;
-  width: 100%;
-  border-bottom: 2px solid #dd2c00;
-  -webkit-transform: translateX(-110%);
-          transform: translateX(-110%);
-  -webkit-transition: -webkit-transform 0.1s ease;
-  transition: -webkit-transform 0.1s ease;
-  transition: transform 0.1s ease;
-  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
-}
-
-.form__input input:focus + .form__label .content__label,
-.form__input input:valid + .form__label .content__label {
-  -webkit-transform: translateY(-150%);
-          transform: translateY(-150%);
-  font-size: 1.1rem;
-  color: #dd2c00;
-}
-
-.form__input textarea {
-  width: 100%;
-  height: 100%;
-  padding: 35px 0 7px 0;
-  border: none;
-  resize: none;
-  outline: none;
-}
-
-.form__input textarea:focus + .form__label .content__label-textarea,
-.form__input textarea:valid + .form__label .content__label-textarea {
-  -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
-  font-size: 1.1rem;
-  color: #dd2c00;
-}
-
-.form__input input:focus + .form__label::after,
-.form__input input:valid + .form__label::after {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-}
-
-.form__input textarea:focus + .form__label::after,
-.form__input textarea:valid + .form__label::after {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-}
-
-.content__label {
-  position: absolute;
-  bottom: 5px;
-  left: 0px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.content__label-textarea {
-  position: absolute;
-  bottom: 150px;
-  left: 0px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: 0.938rem;
-  cursor: pointer;
-  margin-top: 2rem;
-  margin-left: auto;
-  text-align: center;
-  width: 35%;
-}
-
 .footer {
   background-color: #262626;
   color: #fff;
   text-align: center;
   font-weight: 300;
   padding: 2rem 0;
+  margin-top: 2rem;
 }
 
 .footer__title {

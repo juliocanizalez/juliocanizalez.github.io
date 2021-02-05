@@ -357,103 +357,6 @@ img{
     transform: scale(1.1);
 }
 
-//contact
-.form__input{
-    position: relative;
-    margin-bottom: $mb3;
-    overflow: hidden;
-
-    input{
-        width: 100%;
-        height: 100%;
-        padding: 35px 0 7px 0;
-        border: none;
-        outline: none;
-        font-size: $normalFontSize;
-    }
-
-    label{
-        position: absolute;
-        bottom: 0px;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        padding: 0.8rem;
-        pointer-events: none;
-        border-bottom: 1px solid $border;
-    }
-
-    label::after{
-        content: "";
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-        height: 100%;
-        width: 100%;
-        border-bottom: 2px solid $firstColor;
-        transform: translateX(-110%);
-        transition: transform 0.1s ease;
-    }
-
-    input:focus + .form__label .content__label, 
-    input:valid + .form__label .content__label{
-        transform: translateY(-150%);
-        font-size: $middleFontSize;
-        color: $firstColor;
-    }
-
-    textarea{
-        width: 100%;
-        height: 100%;
-        padding: 35px 0 7px 0;
-        border: none;
-        resize: none;
-        outline: none;
-    }
-
-    textarea:focus + .form__label .content__label-textarea, 
-    textarea:valid + .form__label .content__label-textarea{
-        transform: translateY(-110%);
-        font-size: $middleFontSize;
-        color: $firstColor;
-    }
-
-    input:focus + .form__label::after, 
-    input:valid + .form__label::after{
-        transform: translateX(0%);
-    }
-
-    textarea:focus + .form__label::after,
-    textarea:valid + .form__label::after{
-        transform: translateX(0%);
-    }
-}
-
-.content__label{
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
-    transition: all 0.5s ease;
-}
-
-.content__label-textarea {
-    position: absolute;
-    bottom: 150px;
-    left: 0px;
-    transition: all 0.5s ease;
-}
-.contact__button{
-    display: block;
-    border: none;
-    outline: none;
-    font-size: $normalFontSize;
-    cursor: pointer;
-    margin-top: $mb4;
-    margin-left: auto;
-    text-align: center;
-    width: 35%;
-}
-
 //Footer
 .footer{
     background-color: $secondColor;
@@ -461,6 +364,7 @@ img{
     text-align: center;
     font-weight: $fontRegular;
     padding: 2rem 0;
+    margin-top: $mb4;
 }
 
 .footer__title{
