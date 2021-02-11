@@ -1,0 +1,34 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+        <loc>https://juliocanizalez.com/</loc>
+        <lastmod>2021-02-11T05:56:03+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://juliocanizalez.com/assets/docs/Julio_Canizalez_Resume.pdf</loc>
+        <lastmod>2021-02-11T05:56:03+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://juliocanizalez.com/nasa-homework/site/</loc>
+        <lastmod>2021-02-11T01:46:38+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://juliocanizalez.com/MinimalClockDark/</loc>
+        <lastmod>2020-12-19T17:07:36+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://juliocanizalez.com/Password-Generator/</loc>
+        <lastmod>2020-12-19T17:06:27+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://juliocanizalez.com/SimonDice/</loc>
+        <lastmod>2020-10-25T02:50:40+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+</urlset>
