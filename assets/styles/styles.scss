@@ -280,10 +280,6 @@ img{
     }
 }
 
-.about__text{
-    font-weight: $fontLight;
-}
-
 //Skills
 .skills__container{
     row-gap: 2rem;
@@ -349,14 +345,46 @@ img{
     border-radius: .5rem;
     overflow: hidden;
 }
-.work__img img{
-    transition: 1s;
-    cursor: pointer;
+.work__img .overlay{
+    transition: all .5s;
 }
-.work__img img:hover{
-    transform: scale(1.1);
+.overlay__text{
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    font-weight: $fontLight;
+    font-size: $normalFontSize;
+    text-align: center;
+    p{
+        margin-bottom: $mb2;
+    }
 }
 
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: .2 ease;
+    background: rgba(14, 14, 14, 0.774);
+    justify-content: center;
+    align-items: center;
+}
+
+.work__img:hover .overlay{
+    opacity: 1;
+}
+
+.work__icon{
+    color: $border;
+    margin-right: $mb2;
+}
 //Footer
 .footer{
     background-color: $secondColor;
@@ -483,9 +511,4 @@ img{
         right: 21%;
         bottom: 25%;
     }
-}
-
-#recaptcha > div {
-    margin: 0 auto;
-    margin-bottom: .5em;
 }
