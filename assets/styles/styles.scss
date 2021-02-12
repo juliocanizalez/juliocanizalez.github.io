@@ -344,10 +344,12 @@ img{
     box-shadow: 0 4px 25px rgba(14,36,49,.15);
     border-radius: .5rem;
     overflow: hidden;
+    transform: translate(0%, 0%);
 }
 .work__img .overlay{
     transition: all .5s;
 }
+
 .overlay__text{
     position: absolute;
     top:45%;
@@ -361,7 +363,6 @@ img{
         margin-bottom: $mb2;
     }
 }
-
 .overlay{
     position: absolute;
     top: 0;
@@ -371,10 +372,8 @@ img{
     height: 100%;
     width: 100%;
     opacity: 0;
-    transform: .2 ease;
+    transition: .2 ease;
     background: rgba(14, 14, 14, 0.774);
-    justify-content: center;
-    align-items: center;
 }
 
 .work__img:hover .overlay{

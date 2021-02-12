@@ -343,6 +343,8 @@ img {
           box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: .5rem;
   overflow: hidden;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
 }
 
 .work__img .overlay {
@@ -375,15 +377,9 @@ img {
   height: 100%;
   width: 100%;
   opacity: 0;
-  -webkit-transform: .2 ease;
-          transform: .2 ease;
+  -webkit-transition: .2 ease;
+  transition: .2 ease;
   background: rgba(14, 14, 14, 0.774);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .work__img:hover .overlay {
