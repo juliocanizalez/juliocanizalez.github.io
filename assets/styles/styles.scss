@@ -55,7 +55,7 @@ html{
 }
 
 body{
-    margin: $headerHeight 0 0 0;
+    margin: 0;
     font-family: $bodyFont;
     font-size: $normalFontSize;
     color: $secondColor;
@@ -208,6 +208,7 @@ img{
 }
 
 .home__data{
+    margin-top: $headerHeight;
     align-self: center;
 }
 

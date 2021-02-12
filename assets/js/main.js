@@ -80,6 +80,7 @@ onscroll = () =>{
     }
 };
 
+
 onload = () =>{
     activeClassManagement();
 };
