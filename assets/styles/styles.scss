@@ -385,6 +385,45 @@ img{
     color: $border;
     margin-right: $mb2;
 }
+
+//Contact
+
+.contact__input{
+    width: 100%;
+    font-size: $normalFontSize;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1.5px solid $border;
+    outline: none;
+    margin-bottom: $mb4;
+}
+
+.contact__button{
+    display: block;
+    border: none;
+    outline: none;
+    font-size: $normalFontSize;
+    cursor: pointer;
+    margin-left: auto;
+    width: 100%;
+    padding: 0.8rem 2.2rem;
+    font-weight: $fontRegular;
+}
+
+.contact__container {
+    margin-top: 4rem;
+}
+
+textarea{
+    resize: none;
+    width: 360px;
+    height: 190px;
+    text-align: start;
+    appearance: textarea;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
 //Footer
 .footer{
     background-color: $secondColor;
