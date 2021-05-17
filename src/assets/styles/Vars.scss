@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+//variables section
+$font: 'Poppins',
+sans-serif;
+$header-height:3rem;
+$hue-color    : 142;
+
+//HSL colors
+$first-color      : hsl($hue-color, 69%, 61%);
+$second-color     : hsl($hue-color, 69%, 61%);
+$alt-color        : hsl($hue-color, 57%, 53%);
+$lighter-color    : hsl($hue-color, 92%, 85%);
+$title-color      : hsl($hue-color, 8%, 15%);
+$text-color       : hsl($hue-color, 8%, 45%);
+$text-color-light : hsl($hue-color, 8%, 65%);
+$input-color      : hsl($hue-color, 79%, 96%);
+$body-color       : hsl($hue-color, 60%, 99%);
+$container-color  : #EDF2F7;
+//FONT config
+$big-font-size    : 2rem;
+$h1               : 1.5rem;
+$h2               : 1.25rem;
+$h3               : 1.125rem;
+$normal-font-size : .938rem;
+$small-font-size  : .813rem;
+$smaller-font-size: .75rem;
+
+$font-medium   : 500;
+$font-semi-bold: 600;
+
+//Margins
+$mb-0-25: .25rem;
+$mb-0-50: .5rem;
+$mb-0-75: .75rem;
+$mb-1   : 1rem;
+$mb-1-5 : 1.5rem;
+$mb-2   : 2rem;
+$mb-2-5 : 2.5rem;
+$mb-3   : 3rem;
+
+//z index
+$z-tooltip: 10;
+$z-fixed  : 100;
+$z-modal  : 1000;
+
+@media screen and (min-width: 968px) {
+  $big-font-size    : 2rem;
+  $h1               : 1.5rem;
+  $h2               : 1.25rem;
+  $h3               : 1.125rem;
+  $normal-font-size : .938rem;
+  $small-font-size  : .813rem;
+  $smaller-font-size: .75rem;
+}
+
+//Reusable classes 
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section_subtitle {
+  display      : block;
+  font-size    : $small-font-size;
+  margin-bottom: $mb-3;
+}
+
+.section_title {
+  font-size: $h1;
+}
+
+.section_title,
+.section_subtitle {
+  text-align: center;
+}
+
+.container {
+  max-width   : 768px;
+  margin-left : $mb-1-5;
+  margin-right: $mb-1-5;
+}
+
+.grid {
+  display: grid;
+  gap    : 1.5rem;
+}
