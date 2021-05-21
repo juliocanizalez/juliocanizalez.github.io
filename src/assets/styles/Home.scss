@@ -1,0 +1,48 @@
+@import './Vars.scss';
+
+.home_container{
+  gap: 1rem;
+}
+
+.home_content{
+  grid-template-columns: .5fr 3fr;
+  padding-top: 3.5rem;
+  align-items: center;
+}
+
+.home_social{
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.home_social-icon{
+  font-size: 1.25rem;
+  color: $first-color;
+  &:hover{
+    color: $alt-color;
+  }
+}
+
+.home_blob-img{
+  width: 200px;
+}
+
+.home_data{
+  grid-column: 1/3;
+}
+
+.home_title{
+  font-size: $big-font-size;
+}
+
+.home_subtitle{
+  font-size: $h3;
+  color: $text-color;
+  font-weight: $font-medium;
+  margin-bottom: $mb-0-75;
+}
+
+.home_description{
+  margin-bottom: $mb-2;
+}

@@ -4,7 +4,7 @@
 $font: 'Poppins',
 sans-serif;
 $header-height:3rem;
-$hue-color    : 142;
+$hue-color    : 230;
 
 //HSL colors
 $first-color      : hsl($hue-color, 69%, 61%);
@@ -83,4 +83,27 @@ $z-modal  : 1000;
 .grid {
   display: grid;
   gap    : 1.5rem;
+}
+
+.button{
+  display: inline-block;
+  background-color: $first-color;
+  color: #EDF2F7;
+  padding: 0.7rem;
+  border-radius: .5rem;
+  font-weight: $font-medium;
+  &:hover{
+    background-color: $alt-color;
+  }
+}
+
+.button_icon{
+  font-size: 1.25rem;
+  margin-left: $mb-0-50;
+  transition: .3s;
+}
+
+.button--flex{
+  display: inline-flex;
+  align-items: center;
 }
