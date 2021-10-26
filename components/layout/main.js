@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Head from 'next/head';
 import { Box, Container } from '@chakra-ui/react';
 
