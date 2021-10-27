@@ -12,6 +12,22 @@ const Main = ({ children, router }) => (
         href="https://img.icons8.com/fluency/96/000000/forward.png"
       />
       <title>Julio Canizalez</title>
+
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-179515638-1"
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-179515638-1');
+            `
+        }}
+      />
     </Head>
     <Container maxW="container.md" pt={14}>
       {children}
