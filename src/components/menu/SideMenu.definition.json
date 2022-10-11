@@ -1,0 +1,26 @@
+{
+  "profile": {
+    "name": "Profile",
+    "key": 1
+  },
+  "projects": {
+    "name": "Projects",
+    "key": 2
+  },
+  "contact": {
+    "name": "Contact",
+    "key": 3
+  },
+  "linkedin": {
+    "name": "LinkedIn",
+    "key": 4
+  },
+  "vscode": {
+    "name": "VS Code Theme",
+    "key": 5
+  },
+  "github": {
+    "name": "Github",
+    "key": 6
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "home": "/",
+  "projects": "projects",
+  "contact": "contact",
+  "canasta": "canasta",
+  "moviedb": "/moviedb",
+  "path": {
+    "1": "/",
+    "2": "projects",
+    "3": "contact",
+    "4": "https://www.linkedin.com/in/juliocanizalez/",
+    "5": "https://marketplace.visualstudio.com/items?itemName=a4tuneinlies.a4tuneintheme",
+    "6": "https://github.com/juliocanizalez"
+  }
+}

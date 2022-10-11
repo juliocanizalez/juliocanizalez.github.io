@@ -1,0 +1,17 @@
+@import "~antd/dist/antd.css";
+
+.main {
+  &-layout {
+    display: grid;
+    gap: 0;
+    grid-template-columns: auto 1fr;
+  }
+
+  &-menu {
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+  }
+}
